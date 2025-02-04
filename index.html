@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
 </head> 
 
 <body>
@@ -13,40 +15,40 @@
 <body>
     <div class="outputBox" id="outputBox">
         <p id="output"> </p>
+        <p id="feedback"> </p>
     </div>  
 </select>
 
-<br><br>
-
-    <input oninput="getMatch()"  type="range" min="32.1" max="59.6" value="32.1" class="slider" id="size">
+<br>
+    <p id="sliding"></p>
+    <input  type="range" min="32.1" max="59.6" value="32.2" class="slider" id="size" onchange="change_slider()">
    
-  <p id="Beak Size"> Beak Size</p>
-    <br><br>
-  
-  <label>Location: </label>
-    <select id="Location">
+  <p id="Your Beak Size"> Your Beak Size (mm)</p>
+    <br>
 
+  
+  <label>Your Location: </label>
+    <select id="Your Location">
+<!-- changeeeee --> 
+ <!-- make beak size smaller -->
         <option value="Torgersen">Torgersen</option>
         <option value="Biscoe">Biscoe</option>
         <option value="Dream">Dream</option>
     </select>
-        
-    <label>Gender: </label>
-        <select id="Gender">
+            <br><br>
+    <label> Desired Gender: </label>
+        <select id="Desired Gender">
     
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
          
         </select>            
 
-<br> <br> <br> <br> <br> 
-        <button onclick="getResults()">Submit</button>
+<br> <br> 
+        <button onclick="getMatch(parseFloat(document.getElementById('size').value), (document.getElementById('Desired Gender').value), (document.getElementById('Your Location').value))" >Submit</button>
 
   
-		<p id="output"> </p>
 	</div>
-
-
 
 
     </center>
