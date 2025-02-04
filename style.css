@@ -1,56 +1,57 @@
+//this tells the type of the font and the size of the font in the body 
 body{
   font-family: serif;
   font-size: 23px;
-
 }
+//this tells the details about the header
 header{
-  background-color: rgb(130, 228, 223);
+  background-color: rgb(130, 228, 223);//this tells the color of the backround of the header
 
-    font-family: "Kablammo", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 0;
+    font-family: "Kablammo", serif; //this tells the font family of the header
+    font-optical-sizing: auto; // this design different versions of a font- of the header 
+    font-weight: 400; //this tells you the size of the the font you created 
+    font-style: normal; //this sets the font to its default style
+    font-variation-settings: //this specify the variations of the font
+      "MORF" 0; //this specifies the position of the header
     padding: 20px;
     margin-bottom: 10px;
     font-size: 29px;
 }
 
 label{
-  font-size: 20px;
+  font-size: 20px; // this specifies the size of the label
 }
-select{
-  font-family: Verdana;
-  font-size: 15px;
-  border-color: rgb(76, 197, 149);
-  border-width: .3cap;
+select{ // this gives you the details of the elements select
+  font-family: Verdana; // the font family of the element
+  font-size: 15px; // the font size
+  border-color: rgb(76, 197, 149); // the colour is going to surrounf it
+  border-width: .3cap; // the width of the border
 }
-input{
-  font-family: monospace;
-  font-size: 20px;
+input{ //tis gives the details of the text you are going to imput
+  font-family: monospace; //the font family of the text
+  font-size: 20px; //the font size
 
 }
-button{
-  background-color: rgb(101, 232, 210);
-  padding: 10px;
-  font-family: Tahoma;
-  font-size: 15px;
-  border-color: rgb(35, 135, 123);
-  margin-bottom: 10px;
+button{ //this gies the details about the element button
+  background-color: rgb(101, 232, 210); //the colour of the button
+  padding: 10px; //the space around the content of the button
+  font-family: Tahoma; //the font of the text inside of it
+  font-size: 15px; //the size of the font
+  border-color: rgb(35, 135, 123); //the colour that is going to surround the button
+  margin-bottom: 10px; // how big is going to be the margin
 }
-.outputBox{
-  padding: 10px;
-  min-height: 130px;
-  width: 60%;
-  outline-color: lightseagreen;
-  outline-style: solid;
+.outputBox{ //gives the details obut the box where the information is going to appear
+  padding: 10px; // the space around the information is going to appear in the output box
+  min-height: 130px; // this is going to define the minimun height of the output box- this prevents the output box of being smaller when there is nothing in there
+  width: 60%; // this defines the width of the out put box
+  outline-color: lightseagreen; //define the colour of the outline of the box
+  outline-style: solid; //this gives the style of the outline
 }
 
   
-  .slider{
-    width: 50%; 
-    opacity: 0.7; 
+  .slider{ //gives the details about the slider
+    width: 50%; this gives the width o the slider- if its 50% it set it to half the width of the containing block
+    opacity: 0.7; //this changes the opacity of the slider  
 
 /* chagne font */
   }
