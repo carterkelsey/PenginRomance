@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> // everithing is between the head- header
-    <meta charset="UTF-8"> //this makes possible to use other characters that aren't in the traditional character set
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //this sets the initial zoom value of the page
-    <link href="style.css" rel="stylesheet" type="text/css" /> //this joins the style.css to the index html- everything that is code in the style is going to appear in the proyect
-    <link rel="preconnect" href="https://fonts.googleapis.com"> //with this we can use fonts that are not in the original program
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> //this is also udet to import fonts from a website
-    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet"> //this also makes possible to put a font that is not originally in the program
+<head> 
+    <title>PENGUIN LOVE ISLAND</title>
+
+    <!-- // everything is between the head- header. -->
+    <meta charset="UTF-8"> 
+    <!-- //this makes possible to use other characters that aren't in the traditional character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- //this sets the initial zoom value of the page -->
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <!-- //this joins the style.css to the index html- everything that is code in the style is going to appear in the proyect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!-- //with this we can use fonts that are not in the original program -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- //this is also udet to import fonts from a website -->
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet"> 
+    <!-- //this also makes possible to put a font that is not originally in the program -->
 </head> 
 
 <body> 
-<center> //this makes the text be in the center of the page
-    <header>Penguin Romance</header> //the text between header is going to appear as the header
+<center> 
+    <!-- //this makes the text be in the center of the page -->
+    <header>Penguin Romance</header> 
+    <!-- //the text between header is going to appear as the header -->
 <body>
-    <div class="outputBox" id="outputBox"> //this is going to create an output box (where the result of the code is going to appear) we also need to put an id
-        //this is all the information that is going to appear in the output box
-	    <p id="output"> </p //this is the result of the code- is going to tell you how many matches you have
-        <p id="feedback"> </p> // this is the fuction feedback- if you have 0 is going to display a message in the output box and if you have more than 0 another
-    </div> //this means thaqt is going to be in different sections 
-</select> //this specify whether multiple option can be selected
+    <div class="outputBox" id="outputBox"> 
+        <!-- //this is going to create an output box (where the result of the code is going to appear) we also need to put an id -->
+        <!-- //this is all the information that is going to appear in the output box -->
+	<p id="output"> </p 
+          is the result of the code- is going to tell you how many matches you have -->
+        <p id="feedback"> </p> 
+        <!-- // this is the fuction feedback- if you have 0 is going to display a message in the output box and if you have more than 0 another -->
+    </div> 
+    <!-- /this means thaqt is going to be in different sections  -->
+    </select>  
+<!-- //this specify whether multiple option can be selected -->
 
-<br>
-    <p id="sliding"></p> // this is to join the id to the code to create a slider
-    <input  type="range" min="32.1" max="59.6" value="32.2" class="slider" id="size" onchange="change_slider()"> //this creates the slider it put the value it starts, the one it ends and it makes possible to change it
-   
-  <p id="Your Beak Size"> Your Beak Size (mm)</p> //this ide is joined to the sliders id - the sliders define your beak size
-    <br>
-
-  
-  <label>Your Location: </label> //this is going to appear on the code 
-    <select id="Your Location"> //this is the id of the label 
-<!-- changeeeee --> 
+    <div class= "infoBox"  > 
+        <p id="sliding"></p> 
+        <!-- // this is to join the id to the code to create a slider -->
+        <input  type="range" min="32.1" max="59.6" value="32.2" class="slider" id="size" onchange="change_slider()"> 
+        <!-- tes the slider it put the value it starts, the one it ends and it makes possible to change it -->
+    
+        <p id="Your Beak Size"> Your Beak Size (mm)</p> 
+    <!-- //this ide is joined to the sliders id - the sliders define your beak size -->
+        <br>
+        <!-- line breaks are for aestetic on the website page- they make it so the UI isnt squished -->
+    
+  <label>Your Location: </label> 
+  <!-- //this is going to appear on the code  -->
+    <select id="Your Location"> 
+        <!-- //this is the id of the label  -->
  <!-- make beak size smaller -->
-        <option value="Torgersen">Torgersen</option> //all this options are going to define your location
+        <option value="Torgersen">Torgersen</option> 
+        <!-- //all this options are going to define your location -->
         <option value="Biscoe">Biscoe</option>
         <option value="Dream">Dream</option>
-    </select> //this makes possible for the user to select an option
-            <br><br> // this makes a space between 2 lines
-    <label> Desired Gender: </label> //this is going to appear on the proyect
-        <select id="Desired Gender"> // this is the id of the label and the option the user are going to select
+    </select> 
+    <!-- //this makes possible for the user to select an option -->
+            <br><br> 
+            <!-- // this makes a space between 2 lines -->
+    <label> Desired Gender: </label> 
+    <!-- //this is going to appear on the proyect -->
+    <select id="Desired Gender"> 
+            <!-- // this is the id of the label and the option the user are going to select -->
     
-            <option value="female">Female</option> //this are the two options related to the id desired gender
+            <option value="female">Female</option> 
+            <!-- //this are the two options related to the id desired gender -->
             <option value="male">Male</option>
          
-        </select>  // this makes possible for the user to select a option          
+     </select>  
+        <!-- / this makes possible for the user to select a option           -->
 
-<br> <br>  //this is going to create space
+    <br> <br>  
+<!-- //this is going to create space -->
         <button onclick="getMatch(parseFloat(document.getElementById('size').value), (document.getElementById('Desired Gender').value), (document.getElementById('Your Location').value))" >Submit</button>
-  //this is going to create a button thaty when you click on it- is going to store all the information you chose
-	//the function get match is going to store all the information- the number you put on the slider and the number of females/ males in the island you chose  
-	</div>
-
-
+  <!-- //this is going to create a button thaty when you click on it- is going to store all the information you chose
+	//the function get match is going to store all the information- the number you put on the slider and the number of females/ males in the island you chose   -->
+    </div >
+    
     </center>
+    <!-- this tag centeres everything on the page -->
      
 
- <script src="utils.js" script></script> //this makes the changes of the utils and criprt appear on the proyect
+ <script src="utils.js" script></script> 
+ <!-- //this makes the changes of the utils and sriprt appear on the project -->
+  <!--  the utils must come first because its referenced in the script.-->
 <script src="script.js" script></script>
 
 </body>
 </html>
-
