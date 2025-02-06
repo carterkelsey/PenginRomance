@@ -1,57 +1,98 @@
-//this tells the type of the font and the size of the font in the body 
+/* //this tells the type of the font and the size of the font in the body  */
 body{
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 23px;
 }
-//this tells the details about the header
+/* //this tells the details about the header */
 header{
-  background-color: rgb(130, 228, 223);//this tells the color of the backround of the header
+  background-color: rgb(130, 228, 223);
+  /* //this tells the color of the backround of the header */
 
-    font-family: "Kablammo", serif; //this tells the font family of the header
-    font-optical-sizing: auto; // this design different versions of a font- of the header 
-    font-weight: 400; //this tells you the size of the the font you created 
-    font-style: normal; //this sets the font to its default style
-    font-variation-settings: //this specify the variations of the font
-      "MORF" 0; //this specifies the position of the header
+    font-family: "Kablammo", serif; 
+    /* //this tells the font family of the header */
+    font-optical-sizing: auto;
+    /* // this design different versions of a font- of the header  */
+    font-weight: 400; 
+    /* /this tells you the size of the the font you created  */
+    font-style: normal;
+     /* //this sets the font to its default style */
+    font-variation-settings: 
+    /* //this specify the variations of the font */
+      "MORF" 0;
+       /* //this specifies the position of the header */
     padding: 20px;
     margin-bottom: 10px;
     font-size: 29px;
 }
 
 label{
-  font-size: 20px; // this specifies the size of the label
+  font-size: 20px; 
+  /* // this specifies the size of the label */
 }
-select{ // this gives you the details of the elements select
-  font-family: Verdana; // the font family of the element
-  font-size: 15px; // the font size
-  border-color: rgb(76, 197, 149); // the colour is going to surrounf it
-  border-width: .3cap; // the width of the border
+select{ 
+  /* // this gives you the details of the elements select */
+  font-family: Verdana; 
+  /* / the font family of the element */
+  font-size: 15px;
+   /* // the font size */
+  border-color: rgb(76, 197, 149);
+   /* // the colour is going to surrounf it */
+  border-width: .3cap;
+   /* // the width of the border */
 }
-input{ //tis gives the details of the text you are going to imput
-  font-family: monospace; //the font family of the text
-  font-size: 20px; //the font size
+input{ 
+  /* //tis gives the details of the text you are going to imput */
+  font-family: monospace; 
+  /* //the font family of the text */
+  font-size: 20px; 
+  /* //the font size */
 
 }
-button{ //this gies the details about the element button
-  background-color: rgb(101, 232, 210); //the colour of the button
-  padding: 10px; //the space around the content of the button
-  font-family: Tahoma; //the font of the text inside of it
-  font-size: 15px; //the size of the font
-  border-color: rgb(35, 135, 123); //the colour that is going to surround the button
-  margin-bottom: 10px; // how big is going to be the margin
+button{ 
+  /* //this gies the details about the element button */
+  background-color: rgb(101, 232, 210); 
+  /* //the colour of the button */
+  padding: 10px; 
+  /* //the space around the content of the button */
+  font-family: Tahoma; 
+  /* /the font of the text inside of it */
+  font-size: 15px; 
+  /* //the size of the font */
+  border-color: rgb(35, 135, 123); 
+  /* //the colour that is going to surround the button */
+  margin-bottom: 10px; 
+  /* // how big is going to be the margin */
+  box-shadow: 20px 3px 10px rgba(6, 6, 233, 0.2); 
+/* adds shadow to box for looks */
+
 }
-.outputBox{ //gives the details obut the box where the information is going to appear
-  padding: 10px; // the space around the information is going to appear in the output box
-  min-height: 130px; // this is going to define the minimun height of the output box- this prevents the output box of being smaller when there is nothing in there
-  width: 60%; // this defines the width of the out put box
-  outline-color: lightseagreen; //define the colour of the outline of the box
-  outline-style: solid; //this gives the style of the outline
+.outputBox{ 
+  /* the "." allows us to know that its a seperate div */
+  /* //gives the details obut the box where the information is going to appear */
+  padding: 10px;
+   /* // the space around the information is going to appear in the output box */
+  min-height: 130px;
+   /* // this is going to define the minimun height of the output box- this prevents the output box of being smaller when there is nothing in there */
+  width: 60%; 
+  /* // this defines the width of the out put box */
+  outline-color: lightseagreen;
+   /* //define the colour of the outline of the box */
+  outline-style: solid; 
+  /* //this gives the style of the outline */
+  box-shadow: 20px 3px 10px rgba(6, 6, 233, 0.2); 
+  /* adds shadow to box for looks */
 }
 
-  
-  .slider{ //gives the details about the slider
-    width: 50%; this gives the width o the slider- if its 50% it set it to half the width of the containing block
-    opacity: 0.7; //this changes the opacity of the slider  
-
-/* chagne font */
-  }
+.infoBox{
+  /* lets us edit the box where our inputs are */
+  padding: 0%;
+   /* // the space around the information is going to appear in the output box */
+  min-height: 12ppx;
+   /* // this is going to define the minimun height of the output box- this prevents the output box of being smaller when there is nothing in there */
+  width: 95%; 
+  /* // this defines the width of the out put box */
+  outline-color: rgb(18, 139, 133);
+   /* //define the colour of the outline of the box */
+  outline-style: dashed; 
+  /* //this gives the style of the outline */
+ }
